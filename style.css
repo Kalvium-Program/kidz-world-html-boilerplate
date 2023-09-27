@@ -1,7 +1,11 @@
 *{
     margin:0%;
     padding: 0%;
-}nav{
+}
+body {
+    font-family: "Rubik", sans-serif;
+  }
+nav{
     display: flex;
     height: 40px;
     align-items: center;
@@ -25,7 +29,7 @@ header{
     background-image: url(./assets/kw-background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 100%;
     height: 330px;
 }
@@ -75,7 +79,7 @@ h4{
     border: 1px solid none;
     background-color: hsl(219.87,100%,69.02%);
     border-radius: 5px;
-    height: 21px;
+    height: 20px;
     width: 45px;
     color: #fff;
     
@@ -106,4 +110,34 @@ footer>div{
     flex-direction: column;
     align-items: end;
     margin: 0% 6%;
+}
+@media (max-width:400px) {
+    header {
+        height: 200px;
+        font-size: 15px;
+        text-align: start;
+      }
+    
+      header h1 {
+        font-size: 4vh;
+      }
+    
+      header h5 {
+        font-size: 15px;
+      }
+    
+      .header-text {
+        padding: 0% 60% 5% 5%;
+      }
+    
+      body {
+        text-align: center;
+      }
+    
+      .container {
+        justify-content: center;
+      }
+    .books{
+        height: 250px;
+    }
 }
